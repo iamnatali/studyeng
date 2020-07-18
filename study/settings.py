@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['192.168.0.105',
                  'localhost',
-                 'https://studyeng-test.herokuapp.com/']
+                 'marideldaicher.pythonanywhere.com']
 
 
 # Application definition
