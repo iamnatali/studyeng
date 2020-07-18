@@ -3,24 +3,15 @@
 #### Doubletapp
 #### Тестовое задание: Backend
 
-Для запуска проекта по очереди выполнить:
+Теперь приложение доступно на https://marideldaicher.pythonanywhere.com/
+
+Pythonanywhere разрешает доступ только через прокси-сервер proxy.server:3128
+
+пример обращения к /categories/ можно найти в файле test.py
+
+Для запуска проекта из докера по очереди выполнить:
 
 * docker-compose build
 * docker-compose up -d db
 * docker-compose up -d web
 * docker-compose up
-
-Приложение запустится на http://localhost:8000/
-
-Для входа в admin потребуется создание суперпользователя
-
-API_SECRET = '42' и принимается в хэдере Secret
-
-NB! Возможно потребуется создание бд со следующими характеристиками и проведение миграций:
-
-* 'ENGINE': 'django.db.backends.postgresql',
-* 'NAME': 'test',
-* 'USER': 'postgres',
-* 'PASSWORD': '36854',
-* 'HOST': 'db',
-* 'PORT': 5432
