@@ -80,14 +80,24 @@ WSGI_APPLICATION = 'study.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': 'test',
+#        'USER': 'postgres',
+#        'PASSWORD': '36854',
+#        'HOST': 'db',
+#        'PORT': 5432
+#    }
+#}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'test',
-        'USER': 'postgres',
-        'PASSWORD': '36854',
-        'HOST': 'localhost',
-        'PORT': 5432
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'marideldaicher$study',
+        'USER': 'marideldaicher',
+        'PASSWORD': 'f36854piratf36854',
+        'HOST': 'marideldaicher.mysql.pythonanywhere-services.com'
     }
 }
 
