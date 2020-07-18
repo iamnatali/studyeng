@@ -1,6 +1,14 @@
 version: '3'
 
 services:
+  db:
+    image: postgres
+    ports:
+      - "5432"
+    environment:
+      - POSTGRES_DB=test
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=36854
   web:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
@@ -8,3 +16,5 @@ services:
       - .:/app
     ports:
       - "8000:8000"
+    depends_on:
+      - db
