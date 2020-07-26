@@ -3,6 +3,8 @@
 #### Doubletapp
 #### Тестовое задание: Backend
 
+rest-api сайта для обучения английскому
+
 Теперь приложение доступно на https://marideldaicher.pythonanywhere.com/
 
 Pythonanywhere разрешает доступ только через прокси-сервер proxy.server:3128
